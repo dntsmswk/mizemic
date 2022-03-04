@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{DA6DF0A5-BD49-1197-C7D9-4FEADFAEF1D6}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/PlayerMove.cs">
+    <Files>
+      <File FileName="Assets/1_Scripts/PlayerMove.cs" Line="31" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="mizemic" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="1_Scripts" expanded="True">
+                <Node name="PlayerMove.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="76f2e2d8-75a9-48f8-b229-d8b464e6561c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
