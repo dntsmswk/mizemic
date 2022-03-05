@@ -1,6 +1,7 @@
 ﻿<Properties StartupConfiguration="{DA6DF0A5-BD49-1197-C7D9-4FEADFAEF1D6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/PlayerMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/EnemyMove.cs">
     <Files>
+      <File FileName="Assets/1_Scripts/EnemyMove.cs" Line="1" Column="1" />
       <File FileName="Assets/1_Scripts/PlayerMove.cs" Line="31" Column="44" />
     </Files>
     <Pads>
@@ -9,7 +10,7 @@
           <Node name="mizemic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="1_Scripts" expanded="True">
-                <Node name="PlayerMove.cs" selected="True" />
+                <Node name="EnemyMove.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -19,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="76f2e2d8-75a9-48f8-b229-d8b464e6561c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9edb8b05-1771-4e1f-9ef5-2e4d4b4cf786" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
