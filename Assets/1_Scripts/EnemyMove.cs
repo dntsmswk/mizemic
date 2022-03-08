@@ -13,12 +13,12 @@ public class EnemyMove : MonoBehaviour
     [SerializeField]
     private float moveSpeed;
     bool isDie;
+    bool turnOver;
 
 
     public enum State
     {
         MOVE,
-        TURNOVER,
         DIE,
         UP,
         DOWN,
@@ -30,6 +30,7 @@ public class EnemyMove : MonoBehaviour
     void Start()
     {
         isDie = false;
+        turnOver = false;
 
         state = State.MOVE;
         //델리게이로 만든 변수 안에 함수 넣어
@@ -43,9 +44,12 @@ public class EnemyMove : MonoBehaviour
         float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
 
         //state가 TURNOVER로 바뀌면 회전을 정지
-        if (!(state == State.TURNOVER))
+        if (!(turnOver))
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
+        //맞아! 블록의 의해 이동시킬려면 기존의 이동은 꺼야지!!!
+        if(!(state == State.UP || state == State.DOWN ||
+           state == State.RIGHT || state == State.LEFT))
         transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
     }
     public void Enemy_TURNOVER()
@@ -60,15 +64,51 @@ public class EnemyMove : MonoBehaviour
                            1,
                            1 << 6))
         {
-            state = State.TURNOVER;
+            turnOver = true;
             Debug.Log("house맞.");
         }
     }
-   
+    public void UP()
+    {
+        if(state == State.UP)
+        {
+            turnOver = true;
+            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime,Space.World);
+        }
+    }
+    public void DOWN()
+    {
+        if (state == State.DOWN)
+        {
+            turnOver = true;
+            transform.Translate(Vector2.down * moveSpeed * Time.deltaTime, Space.World);
+        }
+    }
+    public void RIGHT()
+    {
+        if (state == State.RIGHT)
+        {
+            turnOver = true;
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime, Space.World);
+        }
+    }
+    public void LEFT()
+    {
+        if (state == State.LEFT)
+        {
+            turnOver = true;
+            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime, Space.World);
+        }
+    }
+
     void Update()
     {
         // 이야~~ 델리게이트 쓰는 코드가 깔 끔 하구먼 
         playerTr(GameObject.Find("player"));
         Enemy_TURNOVER();
+        UP();
+        DOWN();
+        RIGHT();
+        LEFT();
     }
 }

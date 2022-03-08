@@ -53,8 +53,9 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets/1_Scripts/PlayerMove.cs" />
     <Compile Include="Assets/1_Scripts/EnemyMove.cs" />
+    <Compile Include="Assets/1_Scripts/PlayerMove.cs" />
+    <Compile Include="Assets/1_Scripts/TranslocateBlock.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
