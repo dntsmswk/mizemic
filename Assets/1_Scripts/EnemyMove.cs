@@ -9,7 +9,6 @@ public class EnemyMove : MonoBehaviour
 
     RaycastHit2D layHit;
 
-    
     [SerializeField]
     private float moveSpeed;
     bool isDie;
@@ -23,7 +22,8 @@ public class EnemyMove : MonoBehaviour
         UP,
         DOWN,
         RIGHT,
-        LEFT
+        LEFT,
+        BOUNCE
     }
     public State state = State.MOVE;
 
@@ -49,7 +49,7 @@ public class EnemyMove : MonoBehaviour
 
         //맞아! 블록의 의해 이동시킬려면 기존의 이동은 꺼야지!!!
         if(!(state == State.UP || state == State.DOWN ||
-           state == State.RIGHT || state == State.LEFT))
+           state == State.RIGHT || state == State.LEFT || state == State.BOUNCE))
         transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
     }
     public void Enemy_TURNOVER()
@@ -101,6 +101,13 @@ public class EnemyMove : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Wall")
+        {
+            state = State.BOUNCE;
+        }
+    }
     void Update()
     {
         // 이야~~ 델리게이트 쓰는 코드가 깔 끔 하구먼 
