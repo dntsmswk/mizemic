@@ -14,6 +14,10 @@ public class EnemyMove : MonoBehaviour
     bool isDie;
     bool turnOver;
 
+    Vector3 reflectVec;
+    Vector3 fPos;
+    Vector2 inVec;
+
 
     public enum State
     {
@@ -23,7 +27,8 @@ public class EnemyMove : MonoBehaviour
         DOWN,
         RIGHT,
         LEFT,
-        BOUNCE
+        BOUNCE,
+        REFLECT
     }
     public State state = State.MOVE;
 
@@ -47,6 +52,7 @@ public class EnemyMove : MonoBehaviour
         if (!(turnOver))
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
+     
         //맞아! 블록의 의해 이동시킬려면 기존의 이동은 꺼야지!!!
         if(!(state == State.UP || state == State.DOWN ||
            state == State.RIGHT || state == State.LEFT || state == State.BOUNCE))
@@ -74,6 +80,8 @@ public class EnemyMove : MonoBehaviour
         {
             turnOver = true;
             transform.Translate(Vector2.up * moveSpeed * Time.deltaTime,Space.World);
+            Vector3 rota = new Vector3(0, 0, -90);
+            transform.rotation = Quaternion.Euler(rota);
         }
     }
     public void DOWN()
@@ -82,6 +90,8 @@ public class EnemyMove : MonoBehaviour
         {
             turnOver = true;
             transform.Translate(Vector2.down * moveSpeed * Time.deltaTime, Space.World);
+            Vector3 rota = new Vector3(0, 0, -270);
+            transform.rotation = Quaternion.Euler(rota);
         }
     }
     public void RIGHT()
@@ -90,6 +100,8 @@ public class EnemyMove : MonoBehaviour
         {
             turnOver = true;
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime, Space.World);
+            Vector3 rota = new Vector3(0, 0, -180);
+            transform.rotation = Quaternion.Euler(rota);
         }
     }
     public void LEFT()
@@ -98,16 +110,23 @@ public class EnemyMove : MonoBehaviour
         {
             turnOver = true;
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime, Space.World);
+            Vector3 rota = new Vector3(0, 0, -360);
+            transform.rotation = Quaternion.Euler(rota);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.tag == "Wall")
+        if (collision.transform.tag == "Wall")
         {
-            state = State.BOUNCE;
+            //벽에 닿으면 다시 플레이어에게 이동되게함
+            Debug.Log("벽에 닿음");
+            turnOver = false;
+            state = State.MOVE;
         }
     }
+
     void Update()
     {
         // 이야~~ 델리게이트 쓰는 코드가 깔 끔 하구먼 
@@ -117,5 +136,8 @@ public class EnemyMove : MonoBehaviour
         DOWN();
         RIGHT();
         LEFT();
+
+        //발사원점 ?
+        fPos = transform.position;
     }
 }
