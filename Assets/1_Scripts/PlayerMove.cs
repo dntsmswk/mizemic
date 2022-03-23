@@ -11,16 +11,51 @@ public class PlayerMove : MonoBehaviour
     [Range(0.0f, 5.0f)]
     public float maxDistance;
 
+    SpriteRenderer spriteRenderer;
+    Animator animator;
+    int animCount;
+    public float h;
+    public float v;
+
+
     void Start()
     {
-        
+        animCount = 0;
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        Move();
+
+        if (h < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        if(h > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+
+        // 움직였느냐 안 움직였느냐의 따른 애니메이션 전
+        if(h == 0 && v == 0)
+        {
+            animCount = 0;
+            animator.SetInteger("Anim", animCount);
+        }
+        else if(!(h==0) || !(v == 0))
+        {
+            animCount = 1;
+            animator.SetInteger("Anim", animCount);
+        }
+    }
+
+    public void Move()
+    {
+        h = Input.GetAxis("Horizontal");
+        v = Input.GetAxis("Vertical");
         var vec = transform.position;
 
         vec += new Vector3(h, v, 0).normalized * moveSpeed * Time.deltaTime;
