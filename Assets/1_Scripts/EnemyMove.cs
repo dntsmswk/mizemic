@@ -37,11 +37,11 @@ public class EnemyMove : MonoBehaviour
     {
         circleCollider = this.gameObject.GetComponent<CircleCollider2D>();
         circleCollider.isTrigger = true;
-        Invoke("TriggerOff", 1.1f);
+        Invoke("TriggerOff", 1.2f);
     }
     void TriggerOff()
     {
-        circleCollider.isTrigger = false;
+        //circleCollider.isTrigger = false;
     }
     void Start()
     {
@@ -127,7 +127,7 @@ public class EnemyMove : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Wall")
         {

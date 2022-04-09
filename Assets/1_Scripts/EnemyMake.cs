@@ -9,6 +9,8 @@ public class EnemyMake : MonoBehaviour
     public GameObject rangeObject;
     BoxCollider2D rangeCollider;
 
+    float ranSpawnTime;
+
     private void Awake()
     {
         rangeCollider = rangeObject.GetComponent<BoxCollider2D>();
@@ -23,6 +25,9 @@ public class EnemyMake : MonoBehaviour
 
         range_X = Random.Range((range_X / 2) * -1, range_X / 2);
         range_Y = Random.Range((range_Y / 2) * -1, range_Y / 2);
+
+        ranSpawnTime = Random.Range(10f, 15f);
+
         Vector3 RandomPostion = new Vector3(range_X,range_Y);
 
         Vector3 respawnPosition = originPosition + RandomPostion;
@@ -39,7 +44,7 @@ public class EnemyMake : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(ranSpawnTime);
 
             // 생성 위치 부분에 위에서 만든 함수 Return_RandomPosition() 함수 대입
             GameObject instantCapsul = Instantiate(enemy, Return_RandomPosition(), Quaternion.identity);
