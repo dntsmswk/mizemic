@@ -54,8 +54,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets/1_Scripts/EnemyMove.cs" />
-    <Compile Include="Assets/1_Scripts/PlayerMove.cs" />
     <Compile Include="Assets/1_Scripts/TranslocateBlock.cs" />
+    <Compile Include="Assets/1_Scripts/PlayerMove.cs" />
+    <Compile Include="Assets/1_Scripts/EnemyManager.cs" />
+    <Compile Include="Assets/1_Scripts/EnemyMake.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

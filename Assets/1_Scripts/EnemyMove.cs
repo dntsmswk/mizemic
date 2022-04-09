@@ -18,6 +18,7 @@ public class EnemyMove : MonoBehaviour
     Vector3 fPos;
     Vector2 inVec;
 
+    CircleCollider2D circleCollider;
 
     public enum State
     {
@@ -32,6 +33,16 @@ public class EnemyMove : MonoBehaviour
     }
     public State state = State.MOVE;
 
+    private void Awake()
+    {
+        circleCollider = this.gameObject.GetComponent<CircleCollider2D>();
+        circleCollider.isTrigger = true;
+        Invoke("TriggerOff", 1.1f);
+    }
+    void TriggerOff()
+    {
+        circleCollider.isTrigger = false;
+    }
     void Start()
     {
         isDie = false;

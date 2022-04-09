@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{DA6DF0A5-BD49-1197-C7D9-4FEADFAEF1D6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/PlayerMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/EnemyMake.cs">
     <Files>
       <File FileName="Assets/1_Scripts/PlayerMove.cs" Line="44" Column="10" />
-      <File FileName="Assets/1_Scripts/EnemyMove.cs" Line="125" Column="29" />
+      <File FileName="Assets/1_Scripts/EnemyMove.cs" Line="40" Column="27" />
       <File FileName="Assets/1_Scripts/TranslocateBlock.cs" />
+      <File FileName="Assets/1_Scripts/EnemlManager.cs" Line="15" Column="18" />
+      <File FileName="Assets/1_Scripts/EnemyManager.cs" Line="63" Column="52" />
+      <File FileName="Assets/1_Scripts/EnemyMake.cs" Line="28" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,17 +14,25 @@
           <Node name="mizemic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="1_Scripts" expanded="True">
-                <Node name="PlayerMove.cs" selected="True" />
+                <Node name="EnemyMake.cs" selected="True" />
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="da30c2e8-af58-4832-9c57-3d65c30019b5" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5d0599fc-1662-443a-9f22-dc4822dba73e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
