@@ -58,6 +58,8 @@
     <Compile Include="Assets/1_Scripts/PlayerMove.cs" />
     <Compile Include="Assets/1_Scripts/EnemyManager.cs" />
     <Compile Include="Assets/1_Scripts/EnemyMake.cs" />
+    <Compile Include="Assets/1_Scripts/Drag.cs" />
+    <Compile Include="Assets/1_Scripts/DragSlot.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
