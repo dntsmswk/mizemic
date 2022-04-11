@@ -35,7 +35,7 @@ public class EnemyManager : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.5f); //randomTime
+            yield return new WaitForSeconds(randomTime); //randomTime
 
             // 생성 위치 부분에 위에서 만든 함수 Return_RandomPosition() 함수 대입
             GameObject instantCapsul = Instantiate(enemy, Return_RandomPosition(), Quaternion.identity);
@@ -66,12 +66,5 @@ public class EnemyManager : MonoBehaviour
 
         randomTime = Random.Range(3, 11);
         return respawnPosition;
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

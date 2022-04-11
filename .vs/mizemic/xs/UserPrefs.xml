@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{DA6DF0A5-BD49-1197-C7D9-4FEADFAEF1D6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/DragSlot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/PlayerMove.cs">
     <Files>
-      <File FileName="Assets/1_Scripts/DragSlot.cs" Line="21" Column="79" />
-      <File FileName="Assets/1_Scripts/PlayerMove.cs" />
-      <File FileName="Assets/1_Scripts/EnemyMove.cs" />
-      <File FileName="Assets/1_Scripts/TranslocateBlock.cs" />
-      <File FileName="Assets/1_Scripts/EnemyManager.cs" />
-      <File FileName="Assets/1_Scripts/EnemyMake.cs" Line="29" Column="44" />
-      <File FileName="Assets/1_Scripts/Drag.cs" Line="22" Column="41" />
+      <File FileName="Assets/1_Scripts/Drag.cs" Line="1" Column="1" />
+      <File FileName="Assets/1_Scripts/DragSlot.cs" Line="27" Column="20" />
+      <File FileName="Assets/1_Scripts/PlayerMove.cs" Line="39" Column="41" />
+      <File FileName="Assets/1_Scripts/EnemyMove.cs" Line="145" Column="11" />
+      <File FileName="Assets/1_Scripts/TranslocateBlock.cs" Line="35" Column="40" />
+      <File FileName="Assets/1_Scripts/EnemyManager.cs" Line="38" Column="55" />
+      <File FileName="Assets/1_Scripts/EnemyMake.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +15,7 @@
           <Node name="mizemic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="1_Scripts" expanded="True">
-                <Node name="DragSlot.cs" selected="True" />
+                <Node name="PlayerMove.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e6519ab-e85c-40ce-bb57-1a07e2bb4b5d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4df12657-0e44-496e-950e-9fea0c05002a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
