@@ -60,6 +60,7 @@
     <Compile Include="Assets/1_Scripts/EnemyMake.cs" />
     <Compile Include="Assets/1_Scripts/DragSlot.cs" />
     <Compile Include="Assets/1_Scripts/Drag.cs" />
+    <Compile Include="Assets/1_Scripts/GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
