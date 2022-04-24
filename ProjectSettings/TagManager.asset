@@ -10,6 +10,8 @@ TagManager:
   - UP
   - RIGHT
   - LEFT
+  - WALL
+  - BLOCK
   layers:
   - Default
   - TransparentFX

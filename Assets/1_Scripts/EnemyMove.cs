@@ -129,7 +129,7 @@ public class EnemyMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Wall")
+        if (collision.transform.tag == "WALL")
         {
             //벽에 닿으면 다시 플레이어에게 이동되게함
             Debug.Log("벽에 닿음");

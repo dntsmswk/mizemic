@@ -7,6 +7,8 @@ public class EnemyMake : MonoBehaviour
     public GameObject enemy;
 
     public GameObject rangeObject;
+    public GameObject parent;
+
     BoxCollider2D rangeCollider;
 
     float ranSpawnTime;
@@ -48,6 +50,7 @@ public class EnemyMake : MonoBehaviour
 
             // 생성 위치 부분에 위에서 만든 함수 Return_RandomPosition() 함수 대입
             GameObject instantCapsul = Instantiate(enemy, Return_RandomPosition(), Quaternion.identity);
+            instantCapsul.transform.parent = parent.transform;
         }
     }
 }

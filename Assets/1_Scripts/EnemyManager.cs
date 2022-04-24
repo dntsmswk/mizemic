@@ -8,6 +8,8 @@ public class EnemyManager : MonoBehaviour
     public GameObject[] rangeObject;
     public BoxCollider2D[] rangeCollider;
 
+    public GameObject parent;
+
     Vector3 originPosition;
 
     float randomTime;
@@ -39,6 +41,9 @@ public class EnemyManager : MonoBehaviour
 
             // 생성 위치 부분에 위에서 만든 함수 Return_RandomPosition() 함수 대입
             GameObject instantCapsul = Instantiate(enemy, Return_RandomPosition(), Quaternion.identity);
+
+            //애너미들을 parent안으로 차일드화
+            instantCapsul.transform.parent = parent.transform;
         }
     }
 
