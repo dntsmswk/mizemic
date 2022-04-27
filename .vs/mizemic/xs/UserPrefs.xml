@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{DA6DF0A5-BD49-1197-C7D9-4FEADFAEF1D6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/EnemyMake.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/DragSlot.cs">
     <Files>
-      <File FileName="Assets/1_Scripts/DragSlot.cs" Line="62" Column="36" />
-      <File FileName="Assets/1_Scripts/Drag.cs" Line="13" Column="5" />
+      <File FileName="Assets/1_Scripts/TranslocateBlock.cs" Line="1" Column="1" />
+      <File FileName="Assets/1_Scripts/DragSlot.cs" Line="32" Column="13" />
+      <File FileName="Assets/1_Scripts/Drag.cs" Line="89" Column="12" />
       <File FileName="Assets/1_Scripts/PlayerMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/1_Scripts/EnemyMove.cs" Line="132" Column="45" />
-      <File FileName="Assets/1_Scripts/TranslocateBlock.cs" />
-      <File FileName="Assets/1_Scripts/EnemyMake.cs" Line="33" Column="66" />
-      <File FileName="Assets/1_Scripts/GameManager.cs" Line="6" Column="2" />
-      <File FileName="Assets/1_Scripts/EnemyDamegeDie.cs" Line="20" Column="45" />
+      <File FileName="Assets/1_Scripts/EnemyMove.cs" />
+      <File FileName="Assets/1_Scripts/EnemyMake.cs" Line="42" Column="23" />
+      <File FileName="Assets/1_Scripts/GameManager.cs" />
+      <File FileName="Assets/1_Scripts/EnemyDamegeDie.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +16,7 @@
           <Node name="mizemic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="1_Scripts" expanded="True">
-                <Node name="EnemyMake.cs" selected="True" />
+                <Node name="DragSlot.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -26,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="39ccd34d-d725-4fa8-bf59-95eeac734cdb" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0e323e33-19bc-4f5c-aabc-6745ca5a1a7e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
