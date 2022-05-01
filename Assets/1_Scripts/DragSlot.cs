@@ -14,6 +14,9 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
     public Drag[] drag;
     public GameObject[] dragObj;
 
+    CoinManager coinManager;
+    GameObject GcoinManager;
+
     private void Awake()
     {
         SlotColor = GetComponent<Image>();
@@ -25,6 +28,9 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
     }
     private void Start()
     {
+        GcoinManager = GameObject.Find("GameManager");
+        coinManager = GcoinManager.GetComponent<CoinManager>();
+
         dragObj[0] = GameObject.Find("Down"); //Down은 drag스크립트 가지도있는거 아무거나 가져와봄
         dragObj[1] = GameObject.Find("Up");
         dragObj[2] = GameObject.Find("Right");
@@ -48,6 +54,10 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
             //음 스테틱으로 만들어서 현재 만진블록 상태의 따라서 다른값을 주려고 했는데 왜 안되냐
             if(drag[0].dState == 1)
             {
+                CoinManager.coins -= coinManager.Down;
+                //구입할떄마다 가격 비싸짐
+                coinManager.Down += 25;
+
                 Instantiate(blocks[0], slotBox.position, transform.rotation);
                 drag[0].dState = 0;
                 drag[1].dState = 0;
@@ -57,6 +67,10 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
                 
             if (drag[1].dState == 2)
             {
+                CoinManager.coins -= coinManager.Up;
+                //구입할떄마다 가격 비싸짐
+                coinManager.Up += 25;
+
                 Instantiate(blocks[1], slotBox.position, transform.rotation);
                 drag[0].dState = 0;
                 drag[1].dState = 0;
@@ -65,6 +79,10 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
             }
             if (drag[2].dState == 3)
             {
+                CoinManager.coins -= coinManager.Right;
+                //구입할떄마다 가격 비싸짐
+                coinManager.Right += 25;
+
                 Instantiate(blocks[2], slotBox.position, transform.rotation);
                 drag[0].dState = 0;
                 drag[1].dState = 0;
@@ -73,6 +91,10 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
             }
             if (drag[3].dState == 4)
             {
+                CoinManager.coins -= coinManager.Left;
+                //구입할떄마다 가격 비싸짐
+                coinManager.Left += 25;
+
                 Instantiate(blocks[3], slotBox.position, transform.rotation);
                 drag[0].dState = 0;
                 drag[1].dState = 0;

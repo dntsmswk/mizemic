@@ -19,7 +19,10 @@ public class EnemyDamegeDie : MonoBehaviour
             hp -= 1;
             print("hp -1");
             if (hp <= 0)
+            {
+                CoinManager.coins += 100;
                 gameObject.SetActive(false);
+            } 
         }
     }
 }
