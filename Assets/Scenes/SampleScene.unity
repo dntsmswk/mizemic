@@ -3553,6 +3553,7 @@ GameObject:
   - component: {fileID: 1046052015}
   - component: {fileID: 1046052017}
   - component: {fileID: 1046052018}
+  - component: {fileID: 1046052019}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3632,6 +3633,86 @@ MonoBehaviour:
   Down: 100
   Left: 100
   Right: 100
+--- !u!114 &1046052019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046052014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692a7e99dc1c545a2aded7efc6c443c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLine1: {fileID: 238634248}
+  enemyLine2: {fileID: 1868910328}
+  enemyLine3: {fileID: 1392770937}
+  enemyLine4: {fileID: 595611900}
+  blocks:
+  - {fileID: 0}
+  enemy: {fileID: 6613039787790906944, guid: 4ac64284327734b68974a7c525d0d97a, type: 3}
+  distan1:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  distan2:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  distan3:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  distan4:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  rangeObject:
+  - {fileID: 296256733}
+  - {fileID: 1688865612}
+  - {fileID: 217209623}
+  - {fileID: 1736792555}
 --- !u!1 &1071643226
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets/1_Scripts/EnemyMove.cs" />
     <Compile Include="Assets/1_Scripts/GameManager.cs" />
+    <Compile Include="Assets/1_Scripts/CoinManager.cs" />
     <Compile Include="Assets/1_Scripts/TranslocateBlock.cs" />
     <Compile Include="Assets/1_Scripts/PlayerMove.cs" />
     <Compile Include="Assets/1_Scripts/EnemyManager.cs" />
@@ -62,7 +63,7 @@
     <Compile Include="Assets/1_Scripts/EnemyMake.cs" />
     <Compile Include="Assets/1_Scripts/DragSlot.cs" />
     <Compile Include="Assets/1_Scripts/Drag.cs" />
-    <Compile Include="Assets/1_Scripts/CoinManager.cs" />
+    <Compile Include="Assets/1_Scripts/Enemy2rutine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

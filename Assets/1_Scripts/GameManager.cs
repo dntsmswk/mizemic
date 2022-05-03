@@ -12,6 +12,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            Time.timeScale = 2f;
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Time.timeScale = 1f;
+        }
+
     }
 }
