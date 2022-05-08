@@ -45,15 +45,16 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
     {
         if (eventData.pointerDrag != null)
         {
-            SlotColor.color = Color.yellow;
-            Color color = SlotColor.color;
-            color.a = 0.4f;
-            SlotColor.color = color;
-            onBlock = true;
-
             //음 스테틱으로 만들어서 현재 만진블록 상태의 따라서 다른값을 주려고 했는데 왜 안되냐
-            if(drag[0].dState == 1)
+            if (drag[0].dState == 1)
             {
+                SlotColor.color = Color.yellow;
+                Color color = SlotColor.color;
+                color.a = 0.4f;
+                SlotColor.color = color;
+                onBlock = true;
+
+
                 CoinManager.coins -= coinManager.Down;
                 //구입할떄마다 가격 비싸짐
                 coinManager.Down += 25;
@@ -67,6 +68,13 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
                 
             if (drag[1].dState == 2)
             {
+                SlotColor.color = Color.yellow;
+                Color color = SlotColor.color;
+                color.a = 0.4f;
+                SlotColor.color = color;
+                onBlock = true;
+
+
                 CoinManager.coins -= coinManager.Up;
                 //구입할떄마다 가격 비싸짐
                 coinManager.Up += 25;
@@ -79,6 +87,13 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
             }
             if (drag[2].dState == 3)
             {
+                SlotColor.color = Color.yellow;
+                Color color = SlotColor.color;
+                color.a = 0.4f;
+                SlotColor.color = color;
+                onBlock = true;
+
+
                 CoinManager.coins -= coinManager.Right;
                 //구입할떄마다 가격 비싸짐
                 coinManager.Right += 25;
@@ -91,6 +106,13 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
             }
             if (drag[3].dState == 4)
             {
+                SlotColor.color = Color.yellow;
+                Color color = SlotColor.color;
+                color.a = 0.4f;
+                SlotColor.color = color;
+                onBlock = true;
+
+
                 CoinManager.coins -= coinManager.Left;
                 //구입할떄마다 가격 비싸짐
                 coinManager.Left += 25;

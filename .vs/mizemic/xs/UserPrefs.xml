@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{DA6DF0A5-BD49-1197-C7D9-4FEADFAEF1D6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/Enemy2rutine.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/DragSlot.cs">
     <Files>
-      <File FileName="Assets/1_Scripts/EnemyMake.cs" Line="21" Column="34" />
-      <File FileName="Assets/1_Scripts/CoinManager.cs" Line="12" Column="20" />
+      <File FileName="Assets/1_Scripts/DragSlot.cs" Line="143" Column="20" />
+      <File FileName="Assets/1_Scripts/Enemy2rutine.cs" />
+      <File FileName="Assets/1_Scripts/EnemyMake.cs" />
+      <File FileName="Assets/1_Scripts/CoinManager.cs" Line="32" Column="14" />
       <File FileName="Assets/1_Scripts/TranslocateBlock.cs" />
-      <File FileName="Assets/1_Scripts/DragSlot.cs" />
-      <File FileName="Assets/1_Scripts/Drag.cs" />
+      <File FileName="Assets/1_Scripts/Drag.cs" Line="95" Column="30" />
       <File FileName="Assets/1_Scripts/PlayerMove.cs" />
-      <File FileName="Assets/1_Scripts/EnemyMove.cs" Line="144" Column="1" />
-      <File FileName="Assets/1_Scripts/GameManager.cs" Line="19" Column="41" />
+      <File FileName="Assets/1_Scripts/EnemyMove.cs" Line="19" Column="19" />
+      <File FileName="Assets/1_Scripts/GameManager.cs" />
       <File FileName="Assets/1_Scripts/EnemyDamegeDie.cs" />
-      <File FileName="Assets/1_Scripts/EnemyManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/1_Scripts/Enemy2rutine.cs" Line="74" Column="14" />
+      <File FileName="Assets/1_Scripts/EnemyManager.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +19,7 @@
           <Node name="mizemic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="1_Scripts" expanded="True">
-                <Node name="Enemy2rutine.cs" selected="True" />
+                <Node name="DragSlot.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -29,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4740865a-4a36-4cf9-86d7-c0c057dadefd" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5722bedc-e9c6-4b08-b086-cf46d6b49ded" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
