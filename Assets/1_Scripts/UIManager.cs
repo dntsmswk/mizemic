@@ -11,6 +11,14 @@ public class UIManager : MonoBehaviour
 
     int buttonCount;
 
+    public enum State
+    {
+        HARD,
+        NORMAL,
+        EASY
+    }
+    public State level;
+
     void Start()
     {
         buttonCount = 0;
@@ -29,14 +37,22 @@ public class UIManager : MonoBehaviour
             if(buttonCount % 2 == 0)
             {
                 setBlocks_UI[i].SetActive(true);
-                uiSetBTNback.SetActive(true);
+
+                if (level == State.HARD)
+                    uiSetBTNback.SetActive(true);
+
+
+                if(level == State.HARD)
+                    StartCoroutine("CoolTime_UIon");
+
                 Time.timeScale = 0.3f;
-                StartCoroutine("CoolTime_UIon");
             }
             else
             {
                 setBlocks_UI[i].SetActive(false);
-                uiSetBTNback.SetActive(false);
+
+                if (level == State.HARD)
+                    uiSetBTNback.SetActive(false);
                 Time.timeScale = 1f;
             }
         }
@@ -92,7 +108,6 @@ public class UIManager : MonoBehaviour
     }
     void waitCool2()
     {
-        print("111112121212112");
         for (int i = 0; i < setBlocks_UI.Length; i++)
             setBlocks_UI[i].SetActive(false);
 

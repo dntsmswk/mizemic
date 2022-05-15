@@ -45,6 +45,9 @@ public class EnemyMove : MonoBehaviour
     }
     void Start()
     {
+        //에너미 생성되면 현재 에너미 수를 늘림
+        EnemyMake.enemyTotalLength += 1;
+
         isDie = false;
         turnOver = false;
 
