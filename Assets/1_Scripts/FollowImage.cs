@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FollowImage : MonoBehaviour
 {
-    Quaternion followObj;
-    float h;
+    public Quaternion followObj;
+    public float zRot;
     SpriteRenderer spriteRenderer;
 
     private void Start()
@@ -16,21 +16,28 @@ public class FollowImage : MonoBehaviour
 
     void Update()
     {
-        h = followObj.z;
+        //오일러 앵글로 불러야 360도로 나옴 rotation은 0 ~ 1사이로 나옴
+        zRot = gameObject.transform.parent.transform.eulerAngles.z;
 
-        if (h < 0)
+        if (zRot < 0)
         {
-            h += 360;
+            zRot += 360;
         }
-       // if(h) 이제 여기서 몇도일떄 이미지가 어디를 보게하는지 찾으샘 휴 생각보다 빨리 찾은 느낌 
-        gameObject.transform.rotation = followObj;
-        if (h < 0)
+        if (zRot > 360)
         {
-            spriteRenderer.flipX = false;
+            zRot -= 360;
         }
-        if (h > 0)
+        // if(h) 이제 여기서 몇도일떄 이미지가 어디를 보게하는지 찾으샘 휴 생각보다 빨리 찾은 느낌
+        if (90 <= zRot && zRot <= 270)
         {
             spriteRenderer.flipX = true;
         }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        gameObject.transform.rotation = followObj;
+
     }
 }
