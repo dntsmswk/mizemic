@@ -58,13 +58,14 @@
     <Compile Include="Assets/1_Scripts/CoinManager.cs" />
     <Compile Include="Assets/1_Scripts/TranslocateBlock.cs" />
     <Compile Include="Assets/1_Scripts/PlayerMove.cs" />
+    <Compile Include="Assets/1_Scripts/UIManager.cs" />
     <Compile Include="Assets/1_Scripts/EnemyManager.cs" />
     <Compile Include="Assets/1_Scripts/EnemyDamegeDie.cs" />
     <Compile Include="Assets/1_Scripts/EnemyMake.cs" />
     <Compile Include="Assets/1_Scripts/Enemy2rutine.cs" />
     <Compile Include="Assets/1_Scripts/DragSlot.cs" />
     <Compile Include="Assets/1_Scripts/Drag.cs" />
-    <Compile Include="Assets/1_Scripts/UIManager.cs" />
+    <Compile Include="Assets/1_Scripts/FollowImage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

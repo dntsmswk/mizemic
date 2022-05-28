@@ -64,7 +64,7 @@ public class EnemyMove : MonoBehaviour
 
         //state가 TURNOVER로 바뀌면 회전을 정지
         if (!(turnOver))
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
 
      
         //맞아! 블록의 의해 이동시킬려면 기존의 이동은 꺼야지!!!
