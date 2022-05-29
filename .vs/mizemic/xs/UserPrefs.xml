@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{DA6DF0A5-BD49-1197-C7D9-4FEADFAEF1D6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/FollowImage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/EnemyDamegeDie.cs">
     <Files>
       <File FileName="Assets/1_Scripts/DragSlot.cs" Line="143" Column="20" />
       <File FileName="Assets/1_Scripts/Enemy2rutine.cs" />
@@ -10,19 +10,17 @@
       <File FileName="Assets/1_Scripts/PlayerMove.cs" />
       <File FileName="Assets/1_Scripts/EnemyMove.cs" />
       <File FileName="Assets/1_Scripts/GameManager.cs" />
-      <File FileName="Assets/1_Scripts/EnemyDamegeDie.cs" />
+      <File FileName="Assets/1_Scripts/EnemyDamegeDie.cs" Line="31" Column="46" />
       <File FileName="Assets/1_Scripts/EnemyManager.cs" />
       <File FileName="Assets/1_Scripts/UIManager.cs" />
-      <File FileName="Assets/1_Scripts/FollowImage.cs" Line="11" Column="38" />
+      <File FileName="Assets/1_Scripts/FollowImage.cs" Line="37" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="mizemic" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="1_Scripts" expanded="True">
-                <Node name="DragSlot.cs" selected="True" />
-              </Node>
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="1_Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -31,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9a1cdd6e-7fae-419d-ba9e-6972de51b156" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f3e5d87c-d115-482d-8d6c-7e8faac7ed8e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
