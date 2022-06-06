@@ -21,8 +21,6 @@ public class EnemyMake : MonoBehaviour
     public int enemyMaxLength;
     public int currentRound;
 
-    public Text round;
-
     private void Awake()
     {
         rangeCollider = rangeObject.GetComponent<BoxCollider2D>();
@@ -38,7 +36,7 @@ public class EnemyMake : MonoBehaviour
         range_X = Random.Range((range_X / 2) * -1, range_X / 2);
         range_Y = Random.Range((range_Y / 2) * -1, range_Y / 2);
 
-        ranSpawnTime = Random.Range(10f, 15f);
+        ranSpawnTime = Random.Range(15f, 25f);
 
         Vector3 RandomPostion = new Vector3(range_X,range_Y);
 
@@ -60,7 +58,7 @@ public class EnemyMake : MonoBehaviour
     private void Update()
     {
         enemyTotalLengthShow = enemyTotalLength;
-        round.text = "ROUND : " + currentRound.ToString();
+        
         enemy2 = GameObject.FindGameObjectsWithTag("Enemy");
     }
 

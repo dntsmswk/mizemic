@@ -37,7 +37,7 @@ public class EnemyMove : MonoBehaviour
     {
         circleCollider = this.gameObject.GetComponent<CircleCollider2D>();
         circleCollider.isTrigger = true;
-        Invoke("TriggerOff", 1.2f);
+        //Invoke("TriggerOff", 1.2f);
     }
     void TriggerOff()
     {

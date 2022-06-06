@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FollowImage : MonoBehaviour
 {
+    public bool defaultFlipX;
     public Quaternion followObj;
     public float zRot;
     SpriteRenderer spriteRenderer;
@@ -30,11 +31,11 @@ public class FollowImage : MonoBehaviour
         // if(h) 이제 여기서 몇도일떄 이미지가 어디를 보게하는지 찾으샘 휴 생각보다 빨리 찾은 느낌
         if (90 <= zRot && zRot <= 270)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = defaultFlipX;
         }
         else
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = !defaultFlipX;
         }
 
         gameObject.transform.rotation = followObj;

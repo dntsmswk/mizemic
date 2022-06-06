@@ -115,6 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc738300ef6a47a39502750221fb601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultFlipX: 1
+  followObj: {x: 0, y: 0, z: 0, w: 0}
+  zRot: 0
 --- !u!1 &6613039787790906944
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +195,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -214,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf4adabab6764eb4a0704100e648cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 2
   state: 0
 --- !u!50 &-6109496767686824425
 Rigidbody2D:

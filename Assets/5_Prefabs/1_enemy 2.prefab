@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc738300ef6a47a39502750221fb601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultFlipX: 1
   followObj: {x: 0, y: 0, z: 0, w: 0}
   zRot: 0
 --- !u!1 &6613039787790906944
