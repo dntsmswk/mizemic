@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            Time.timeScale = 4f;
+            Time.timeScale = 10f;
         }
         if (Input.GetKeyDown(KeyCode.O))
         {

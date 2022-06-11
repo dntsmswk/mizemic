@@ -10,7 +10,7 @@ public class EnemyMove : MonoBehaviour
     RaycastHit2D layHit;
 
     [SerializeField]
-    private float moveSpeed;
+    public float moveSpeed;
     bool isDie;
     bool turnOver;
 

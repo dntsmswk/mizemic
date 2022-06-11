@@ -52,6 +52,7 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         //코인이 100골드 보다 많아야 드래그 가능(블록 구매 가능 )
         //돈이 빠져나가는 부분은 블록이 설치되는 부분에 만
 
+       
         if (CoinManager.coins >= coinManager.Down)
         {
             // 현재 드래그 하고 있는 블록에 따라 상태가 바뀜 그걸 dState에 저
@@ -120,6 +121,7 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void OnDrop(PointerEventData eventData)
     {
+        dState = 0;
     }
     
 }

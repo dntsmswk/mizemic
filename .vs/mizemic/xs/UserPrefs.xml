@@ -1,26 +1,29 @@
-﻿<Properties StartupConfiguration="{DA6DF0A5-BD49-1197-C7D9-4FEADFAEF1D6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/FollowImage.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/1_Scripts/Enemy3_ChangeBlock.cs">
     <Files>
-      <File FileName="Assets/1_Scripts/DragSlot.cs" Line="143" Column="20" />
-      <File FileName="Assets/1_Scripts/EnemyMake.cs" Line="39" Column="39" />
+      <File FileName="Assets/1_Scripts/DragSlot.cs" Line="126" Column="35" />
+      <File FileName="Assets/1_Scripts/EnemyMake.cs" />
       <File FileName="Assets/1_Scripts/CoinManager.cs" />
       <File FileName="Assets/1_Scripts/TranslocateBlock.cs" />
-      <File FileName="Assets/1_Scripts/Drag.cs" />
+      <File FileName="Assets/1_Scripts/Drag.cs" Line="124" Column="20" />
       <File FileName="Assets/1_Scripts/PlayerMove.cs" />
-      <File FileName="Assets/1_Scripts/EnemyMove.cs" Line="40" Column="11" />
-      <File FileName="Assets/1_Scripts/GameManager.cs" />
-      <File FileName="Assets/1_Scripts/EnemyManager.cs" Line="5" Column="26" />
+      <File FileName="Assets/1_Scripts/EnemyMove.cs" />
+      <File FileName="Assets/1_Scripts/GameManager.cs" Line="24" Column="32" />
+      <File FileName="Assets/1_Scripts/EnemyManager.cs" />
       <File FileName="Assets/1_Scripts/UIManager.cs" />
-      <File FileName="Assets/1_Scripts/FollowImage.cs" Line="7" Column="29" />
-      <File FileName="Assets/1_Scripts/Enemy2_Make.cs" Line="81" Column="72" />
+      <File FileName="Assets/1_Scripts/FollowImage.cs" />
+      <File FileName="Assets/1_Scripts/Enemy2_Make.cs" />
+      <File FileName="Assets/1_Scripts/Enemy3_ChangeBlock.cs" Line="30" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="mizemic" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="1_Scripts" expanded="True">
-                <Node name="FollowImage.cs" selected="True" />
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="1_Scripts" expanded="True">
+                  <Node name="Enemy3_ChangeBlock.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -30,7 +33,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c99f2019-7bd3-4bb7-8c1f-abbf130cb59f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9dc20cb8-2df3-4f43-bb8c-ee4b48a4dab6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

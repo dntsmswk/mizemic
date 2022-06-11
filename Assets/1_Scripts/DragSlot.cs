@@ -40,90 +40,96 @@ public class DragSlot : MonoBehaviour, IPointerEnterHandler, IDropHandler, IPoin
         drag[2] = dragObj[2].GetComponent<Drag>();
         drag[3] = dragObj[3].GetComponent<Drag>();
     }
+    
 
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
         {
-            //음 스테틱으로 만들어서 현재 만진블록 상태의 따라서 다른값을 주려고 했는데 왜 안되냐
-            if (drag[0].dState == 1)
+            if(!(onBlock))
             {
-                SlotColor.color = Color.yellow;
-                Color color = SlotColor.color;
-                color.a = 0.4f;
-                SlotColor.color = color;
-                onBlock = true;
+                //음 스테틱으로 만들어서 현재 만진블록 상태의 따라서 다른값을 주려고 했는데 왜 안되냐
+                if (drag[0].dState == 1)
+                {
+                    SlotColor.color = Color.yellow;
+                    Color color = SlotColor.color;
+                    color.a = 0.4f;
+                    SlotColor.color = color;
+                    onBlock = true;
 
 
-                CoinManager.coins -= coinManager.Down;
-                //구입할떄마다 가격 비싸짐
-                coinManager.Down += 25;
+                    CoinManager.coins -= coinManager.Down;
+                    //구입할떄마다 가격 비싸짐
+                    coinManager.Down += 25;
 
-                Instantiate(blocks[0], slotBox.position, transform.rotation);
-                drag[0].dState = 0;
-                drag[1].dState = 0;
-                drag[2].dState = 0;
-                drag[3].dState = 0;
+                    Instantiate(blocks[0], slotBox.position, transform.rotation);
+                    drag[0].dState = 0;
+                    drag[1].dState = 0;
+                    drag[2].dState = 0;
+                    drag[3].dState = 0;
+                }
+
+                if (drag[1].dState == 2)
+                {
+                    SlotColor.color = Color.yellow;
+                    Color color = SlotColor.color;
+                    color.a = 0.4f;
+                    SlotColor.color = color;
+                    onBlock = true;
+
+
+                    CoinManager.coins -= coinManager.Up;
+                    //구입할떄마다 가격 비싸짐
+                    coinManager.Up += 25;
+
+                    Instantiate(blocks[1], slotBox.position, transform.rotation);
+                    drag[0].dState = 0;
+                    drag[1].dState = 0;
+                    drag[2].dState = 0;
+                    drag[3].dState = 0;
+                }
+
+                if (drag[2].dState == 3)
+                {
+                    SlotColor.color = Color.yellow;
+                    Color color = SlotColor.color;
+                    color.a = 0.4f;
+                    SlotColor.color = color;
+                    onBlock = true;
+
+
+                    CoinManager.coins -= coinManager.Right;
+                    //구입할떄마다 가격 비싸짐
+                    coinManager.Right += 25;
+
+                    Instantiate(blocks[2], slotBox.position, transform.rotation);
+                    drag[0].dState = 0;
+                    drag[1].dState = 0;
+                    drag[2].dState = 0;
+                    drag[3].dState = 0;
+                }
+
+                if (drag[3].dState == 4)
+                {
+                    SlotColor.color = Color.yellow;
+                    Color color = SlotColor.color;
+                    color.a = 0.4f;
+                    SlotColor.color = color;
+                    onBlock = true;
+
+
+                    CoinManager.coins -= coinManager.Left;
+                    //구입할떄마다 가격 비싸짐
+                    coinManager.Left += 25;
+
+                    Instantiate(blocks[3], slotBox.position, transform.rotation);
+                    drag[0].dState = 0;
+                    drag[1].dState = 0;
+                    drag[2].dState = 0;
+                    drag[3].dState = 0;
+                }
+                //Instantiate(blocks, transform.position, transform.rotation); //  374.51/418.07
             }
-                
-            if (drag[1].dState == 2)
-            {
-                SlotColor.color = Color.yellow;
-                Color color = SlotColor.color;
-                color.a = 0.4f;
-                SlotColor.color = color;
-                onBlock = true;
-
-
-                CoinManager.coins -= coinManager.Up;
-                //구입할떄마다 가격 비싸짐
-                coinManager.Up += 25;
-
-                Instantiate(blocks[1], slotBox.position, transform.rotation);
-                drag[0].dState = 0;
-                drag[1].dState = 0;
-                drag[2].dState = 0;
-                drag[3].dState = 0;
-            }
-            if (drag[2].dState == 3)
-            {
-                SlotColor.color = Color.yellow;
-                Color color = SlotColor.color;
-                color.a = 0.4f;
-                SlotColor.color = color;
-                onBlock = true;
-
-
-                CoinManager.coins -= coinManager.Right;
-                //구입할떄마다 가격 비싸짐
-                coinManager.Right += 25;
-
-                Instantiate(blocks[2], slotBox.position, transform.rotation);
-                drag[0].dState = 0;
-                drag[1].dState = 0;
-                drag[2].dState = 0;
-                drag[3].dState = 0;
-            }
-            if (drag[3].dState == 4)
-            {
-                SlotColor.color = Color.yellow;
-                Color color = SlotColor.color;
-                color.a = 0.4f;
-                SlotColor.color = color;
-                onBlock = true;
-
-
-                CoinManager.coins -= coinManager.Left;
-                //구입할떄마다 가격 비싸짐
-                coinManager.Left += 25;
-
-                Instantiate(blocks[3], slotBox.position, transform.rotation);
-                drag[0].dState = 0;
-                drag[1].dState = 0;
-                drag[2].dState = 0;
-                drag[3].dState = 0;
-            }
-            //Instantiate(blocks, transform.position, transform.rotation); //  374.51/418.07
         }
     }
 
