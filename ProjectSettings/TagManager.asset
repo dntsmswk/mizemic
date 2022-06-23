@@ -12,6 +12,7 @@ TagManager:
   - LEFT
   - WALL
   - BLOCK
+  - UISLOT
   layers:
   - Default
   - TransparentFX

@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  color: {r: 1, g: 0.3820755, b: 0.3820755, a: 0}
   state: 0
 --- !u!50 &-6109496767686824425
 Rigidbody2D:
