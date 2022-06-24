@@ -66,13 +66,15 @@
     <Compile Include="Assets/1_Scripts/cameraMove.cs" />
     <Compile Include="Assets/1_Scripts/1_EnemyScript/EnemyMake.cs" />
     <Compile Include="Assets/1_Scripts/1_EnemyScript/Enemy2_Make.cs" />
+    <Compile Include="Assets/1_Scripts/GarbageHp.cs" />
     <Compile Include="Assets/1_Scripts/GarbageManager.cs" />
     <Compile Include="Assets/1_Scripts/1_EnemyScript/Enemy3_ChangeBlock.cs" />
     <Compile Include="Assets/1_Scripts/2_UiScript/DragSlot.cs" />
     <Compile Include="Assets/1_Scripts/1_EnemyScript/FollowImage.cs" />
     <Compile Include="Assets/1_Scripts/1_EnemyScript/Enemy3_Make.cs" />
     <Compile Include="Assets/1_Scripts/2_UiScript/Drag.cs" />
-    <Compile Include="Assets/1_Scripts/GarbageHp.cs" />
+    <Compile Include="Assets/1_Scripts/HpBar.cs" />
+    <Compile Include="Assets/1_Scripts/HpBarGarbage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

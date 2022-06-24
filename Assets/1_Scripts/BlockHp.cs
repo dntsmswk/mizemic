@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class BlockHp : MonoBehaviour
 {
-    float Hp;
+    public float Hp;
     public bool die;
     public Transform parentSlot;
     public GameObject[] uiSlots;
     public DragSlot[] FdragSlot;
     public DragSlot dragSlot;
+
+    GameObject hpBarObj;
+    HpBar hpBar;
 
     private void Start()
     {
@@ -20,6 +23,9 @@ public class BlockHp : MonoBehaviour
 
         parentSlot = transform.parent;
         uiSlots = GameObject.FindGameObjectsWithTag("UISLOT");
+
+        hpBarObj = transform.GetChild(0).gameObject;
+        hpBar = hpBarObj.GetComponent<HpBar>();
     }
 
     private void Update()
@@ -46,6 +52,7 @@ public class BlockHp : MonoBehaviour
     {
         if(collision.transform.tag == "Enemy")
         {
+            hpBar.hit();
             Hp -= 1;
         }
     }

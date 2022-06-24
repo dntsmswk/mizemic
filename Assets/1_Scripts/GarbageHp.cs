@@ -13,11 +13,17 @@ public class GarbageHp : MonoBehaviour
     bool shake;
     int shakeCount;
 
+    HpBarGarbage HpBarGarbage;
+    GameObject hpBarGarbageObj;
+
     private void Start()
     {
         hp = Random.Range(5, 21);
         shake = false;
         shakeCount = 0;
+
+        hpBarGarbageObj = transform.GetChild(0).gameObject;
+        HpBarGarbage = hpBarGarbageObj.GetComponent<HpBarGarbage>();
     }
 
     private void Update()
@@ -60,6 +66,8 @@ public class GarbageHp : MonoBehaviour
                 CoinManager.coins += 10;
 
                 shake = true;
+
+                HpBarGarbage.hit();
                 hp -= 1;
                 if (hp <= 0)
                 {
